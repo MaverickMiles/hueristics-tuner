@@ -1,0 +1,366 @@
+.index-body{
+    background: rgba(255,248,241,1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-body{
+    background: rgba(255,248,241,1);
+    max-width:1440px;
+}
+.overflow{
+    overflow: scroll;
+}
+.header{
+    display:flex;
+    /* position: relative; */
+    height: 30px;
+}
+.icon{
+    /* position: relative; */
+    display: inline-block;
+    /* visibility: True; */
+    width: 32px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.home-icon{
+    position: absolute;
+    top: 8px;
+    left: 2.5%;
+    margin: 15px;
+   
+}
+
+.menu-icon{
+    position: absolute;
+    top: 8px;
+    left: min(92.5%,1332px);
+    margin: 15px;
+}
+
+.toggle-icon{
+    padding: 14px 0px 0px 3px;
+    width: 62px;
+    height: 55px;
+    
+}
+.center-div{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.play-center-div{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    width:480px;
+}
+.side-div{
+    display: inline-block;
+}
+
+.number-2048{
+    display:block;
+    font-family: "Roboto";
+    font-weight: Bold;
+    font-size: 100px;
+    color: rgb(123,116,108);
+}
+.image-2048 {
+    display:block;
+    width: 480px;
+    height: 470px;
+    background: url("../resources/v10_129.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+  }
+
+.button{   
+    margin: 15px;
+    padding: 10px;
+    display:inline-block;
+    background: #776E65;
+    border-radius: 5px;
+    width: 120px;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+    color: #FFFCFC;
+}
+
+.new-game{
+    width: auto;
+    margin-left: 120px;
+}
+.session{
+    display:block;
+    width: 200px;
+}
+
+
+.flex{
+    display:flex;
+    /* margin: 5px; */
+}
+
+.play-flex{
+    flex-direction: row;
+    height: auto;
+    margin-top: -15px;
+    /* align-items: flex-start; */
+}
+
+.left-align{
+    text-align: left;
+}
+
+.right-align{
+    
+    text-align: right;
+    
+}
+.text{
+    position:relative;
+    top: -10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color:  rgb(123,116,109);
+    margin-top: 0px
+}
+
+.debugging-mode{
+    position: relative;
+    display:inline-block;
+    margin-left: 10px;
+    top:0px;
+    /* height:30px; */
+    top: 27px;
+    
+}
+
+.debug-text{
+    cursor: pointer;
+    text-decoration: underline;
+    width:45%;
+}
+.italics{
+    font-style: italic;
+    font-weight: normal;
+}
+
+.debug-controller{
+    display: inline-block;
+    align-items: center;
+    /* text-justify: center; */
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.move-list-column{
+    margin-top:5%;
+    margin-left: 50px;
+    flex-basis: 50%;
+}
+
+.score-board{
+    display:flex;
+    flex-direction:row;
+    margin-left: 10%;
+    margin-top:5%;
+    align-items: center;
+    
+}
+
+.score{ 
+    background: #EEE4DA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width: 148px;
+    height: 92px;
+    padding: 10px;
+    padding-bottom:0px;
+    margin-left: 20px;
+}
+
+.score-text{
+    
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #776E65;
+}
+
+.score-number{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.move-list-div{
+    width: 450px;
+    height: 426px;
+    margin-top: 10%;
+    background: #F3E4DE;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.move-list-title{
+    width: 100%;
+    height: 61px;
+    background: #D2AAAA;
+    z-index: 9999;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display:inline-block;
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
+    /* align-items: center; */
+}
+
+.move-list-title-span{
+    display:inline-block;
+    padding: 15px;
+}
+.move-list-text{
+    width: 100%;
+    height: 365px;
+    overflow-y: scroll;   
+}
+
+.move-text-div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+    padding:10px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+}
+
+.move-button{
+    width: 150px;
+    padding:5px;
+    margin-left: 30px;
+    font-size: 20px;
+    /* background#C4C4C4; */
+}
+
+.align-right{
+    position: relative;
+    text-align: right;
+    text-justify: right;
+    /* margin-right: 0px; */
+    margin-left: 3%;
+}
+
+.play-footer-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.footer-button{
+    background:#2BAA38;
+    flex-basis: 30%;
+    margin-left: 5px;
+    font-size:16px;
+    width:120px;
+}
+
+.inspect-button{
+    width: 140px;
+    background:#2BAA38;
+    flex-basis: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    float:left;
+    margin-left: -10px;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+.welcome-body{
+    background: rgba(255,248,241,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome{
+    margin-top: 5%;
+    width: 589px;
+    height: 162px;
+    font-family: Oxygen;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: hard-light;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+.buttons{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-button{
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.games{
+    margin-top: 15%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.game{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 25px;
+}
+
+.game-button{
+    margin-top: 30px;
+}
